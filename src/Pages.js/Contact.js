@@ -30,7 +30,7 @@ const Contact = () => {
          </div>
          <div  className='contact-flex'>
          <img src={linkedin} alt='LinkedIn'/>
-         <a href=''>LinkedIn</a>
+         <a href='https://www.linkedin.com/in/anulika-nnedu-3b2695a6'>LinkedIn</a>
          </div>
          <div  className='contact-flex'>
         <a href='https://github.com/AnulikaP'> <img src={github} alt='github'/></a>

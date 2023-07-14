@@ -187,6 +187,8 @@
   }
   .project p{
     font-weight: 600;
+    width: 250px;
+    color: white;
   }
   .project a{
     display: block;
