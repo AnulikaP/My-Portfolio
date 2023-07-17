@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
     {id: '3', name: 'List Rendering & Filtering', picture: 'https://stupendous-profiterole-21b30a.netlify.app/', img: require('../Assets/Omega.png'), statement: 'Built with React Js, this App enables users to find a search name by filtering through the name available in the data.'},
 
-    {id: '2', name: 'StarWars Movie App', picture: 'https://incomparable-piroshki-913acb.netlify.app/',img: require('../Assets/StarWars.png'), statement: 'This App renders information to users by fetching data fron API.' },
+    {id: '2', name: 'StarWars Movie App', picture: 'https://incomparable-piroshki-913acb.netlify.app/',img: require('../Assets/StarWars.png'), statement: 'This App renders information to users by fetching data from an API.' },
 
     {id: '4', name: 'Udemy Landing Page', picture: 'https://thunderous-eclair-49a799.netlify.app/',img: require('../Assets/udemy.png'), statement: 'Cloned Udemy Landing Page built with HTML & css.  '},
 
@@ -30,7 +30,7 @@ const Project = () => {
             
             <a key={index} href={work.picture} target='_blank'>{work.name}</a>
             <p>{work.statement}</p>
-            <p>{work.description}</p>
+        
 
         </div>
     </div>

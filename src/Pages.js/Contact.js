@@ -21,19 +21,19 @@ const Contact = () => {
     </div>
     <div className='contact-sec'>
         <div className='contact-flex'>
-           <a href='https://mail.google.com/mail/?view=cm&to=anulinnedu@gmail.com&su=helloanuli&body='> <img src={email} alt='email'/></a>
-            <a href='https://mail.google.com/mail/?view=cm&to=anulinnedu@gmail.com&su=helloanuli&body='>anulinnedu@gmail.com</a>
+           <a href='https://mail.google.com/mail/?view=cm&to=anulinnedu@gmail.com&su=helloanuli&body=' target='_blank'> <img src={email} alt='email'/></a>
+            <a href='https://mail.google.com/mail/?view=cm&to=anulinnedu@gmail.com&su=helloanuli&body=' target='_blank'>anulinnedu@gmail.com</a>
         </div>
         <div  className='contact-flex'>
-        <a href='https://twitter.com/anuli_nnedu'><img src={tweet} alt='twitter'/></a>
-        <a href='https://twitter.com/anuli_nnedu'>twitter</a>
+        <a href='https://twitter.com/anuli_nnedu' target='_blank'><img src={tweet} alt='twitter'/></a>
+        <a href='https://twitter.com/anuli_nnedu' target='_blank'>twitter</a>
          </div>
          <div  className='contact-flex'>
-         <img src={linkedin} alt='LinkedIn'/>
-         <a href='https://www.linkedin.com/in/anulika-nnedu-3b2695a6'>LinkedIn</a>
+         <a href='https://www.linkedin.com/in/anulika-nnedu-3b2695a6' target='blank'> <img src={linkedin} alt='LinkedIn'/></a>
+         <a href='https://www.linkedin.com/in/anulika-nnedu-3b2695a6' target='blank'>LinkedIn</a>
          </div>
          <div  className='contact-flex'>
-        <a href='https://github.com/AnulikaP'> <img src={github} alt='github'/></a>
+        <a href='https://github.com/AnulikaP' target='blank'> <img src={github} alt='github'/></a>
          <a href='https://github.com/AnulikaP' target='_blank'>Github</a>
          </div>
 

@@ -11,7 +11,7 @@ const Footer = () => {
         <Link to='/projects'>Projects</Link>
         </div>
         <div className='foot-sec'>
-           <FaRegCopyright/> <p> 2023| Designed & Built by Anulika Nnedu</p>
+           <FaRegCopyright/> <p> 2023 | Designed & Built by Anulika Nnedu</p>
         </div>
 
 

@@ -13,7 +13,7 @@ const Home = () => {
     <img src={Anuli} alt='myimg'/>
    </div>
     <div className='home-intro'>
-    <h1>Hello,</h1>
+    <h1><i>Hello,</i></h1>
     <h2>I am Anulika Nnedu</h2>
     <h4>A Frontend Developer</h4>
     <p>I possess a strong enthusiasm for developing visually appealing applications and websites for clients. My commitment, excellent collaboration skills, and focus on achieving objectives make me an asset to any team. </p>

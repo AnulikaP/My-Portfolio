@@ -4,7 +4,7 @@
     margin: 0;
   }
   body{
-    background-color: rgb(246, 245, 246);
+    background-color:rgb(62, 56, 56);
     font-family: Arial, Helvetica, sans-serif;
   }
   a{
@@ -18,11 +18,8 @@
     width: 90%;
     font-size: 1.5rem;
     padding: 20px;
+    position: relative;
 
-  }
-  .nav-img{
-    display: flex;
-    flex-direction: row;
   }
   .nav-img p{
     margin-left: 50px;
@@ -102,7 +99,7 @@
   }
   .contact{
     border-radius: 20px;
-    background-color: rgb(238, 142, 174);
+    background-color:rgb(242, 7, 187);;
     margin: 0 auto;
     width: 50%;
     font-size: 1.5rem;
@@ -147,35 +144,27 @@
     list-style-type: none;
     border-radius: 15px;
     color:  white;
-    
     font-weight: 600;
     padding: 10px;
     background-color: blueviolet;
+    transition: 0.3s ease-in-out;
   }
   .skill-sec li:hover{
-    background-color: rgb(214, 131, 159);
+    background-color: rgb(242, 7, 187);
     color: white;
 
   }
   .active{
-    border-radius: 15px;
+    /* border-radius: 15px;
     color: white;
     font-weight: 600;
     padding: 5px;
-    background-color: blueviolet;
+    background-color: blueviolet; */
   }
-  .menu-toggle {
+  #mobile{
     display: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
-  .menu-toggle .toggle-bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-  }
+  
   /* PROJECT STYLES */
   .project img{
     width: 250px;
@@ -186,7 +175,7 @@
     box-shadow: 2px 4px 12px 6px rgb(66, 66, 214) 
   }
   .project p{
-    font-weight: 600;
+    font-weight: 400;
     width: 250px;
     color: white;
   }
@@ -220,6 +209,7 @@
   .foot-sec p{
     font-size: 12px;
     font-weight: 600;
+    color: rgb(170, 169, 169);
   }
   .footer-flex{
     display: flex;
@@ -271,6 +261,37 @@
         overflow-x: hidden !important;
         width: 300px;
     }
-    
+    .nav-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        padding: 10px;
+        position: fixed;
+        top: 70px;
+        right: -200px;
+        width: 130px;
+        height: 300px;
+        background-color: blueviolet;
+        box-shadow: 0 40px 60px black;
+        padding:0 20px  ;
+        opacity: 0.9;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-flex.active{
+        right:0px ;
+    }
+    a{
+        color: black;
+        font-weight: 500;
+    }
+
+    #mobile{
+        display:block ;
+    }
+    .bar{
+        color: white;
+    }
     
   }

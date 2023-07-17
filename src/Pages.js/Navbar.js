@@ -1,30 +1,33 @@
-import React, { useState } from 'react'
+import React, { Component, useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import Resume from './Resume';
+import { HiMenu } from 'react-icons/hi';
+import { GrFormClose } from 'react-icons/gr'
 
 
-const Navbar = () => {
+  const Navbar = () => {
+
     const [menuOpen, setMenuOpen] = useState(false);
-    const handleToggle = () => {
-        setMenuOpen(!menuOpen);
-    }
-   return (
+
+    const handleClick = () => { setMenuOpen(!menuOpen)};
+    
+    return (
     <div>
          <nav>
         <div className='nav-img'><p>Anulika Nnedu</p></div>
-        <div className={`nav-flex ${menuOpen ? 'open' : ''}`}>
-        <NavLink to='/' onClick={handleToggle}>Home</NavLink>
-        <NavLink to='/projects' onClick={handleToggle}>Projects</NavLink>
-        <NavLink to='/contact' onClick={handleToggle}>Contact</NavLink>
+        
+        <div className={`nav-flex ${menuOpen ? 'nav-flex active' : 'navflex'}`}>
+        <NavLink to='/' onClick={handleClick}>Home</NavLink>
+        <NavLink to='/projects' onClick={handleClick}>Projects</NavLink>
+        <NavLink to='/contact' onClick={handleClick}>Contact</NavLink>
         <Resume/>
         </div>
-        <button className={`menu-toggle ${menuOpen ? 'active' : ''}`} onClick={handleToggle}>
-        <span className="toggle-bar"></span>
-        <span className="toggle-bar"></span>
-        <span className="toggle-bar"></span>
-        </button>
+        <div id='mobile' onClick={handleClick}>
+        <div className='bar'>
+            {menuOpen ? <GrFormClose/> : <HiMenu/>}
+         </div>
+        </div>
     </nav>
-    <Outlet/>
 
     </div>
   )
