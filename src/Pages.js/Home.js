@@ -32,7 +32,7 @@ const Home = () => {
         </ul>
     </div>
     <div className='contact-branch'>
-        <Link to='/contact'>Contact Me</Link>
+        <Link to='/contact' id='btn'>Contact Me</Link>
 
     </div>
     </div>

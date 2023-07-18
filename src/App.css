@@ -4,12 +4,12 @@
     margin: 0;
   }
   body{
-    background-color:rgb(62, 56, 56);
+    background-color:rgb(42, 41, 41);
     font-family: Arial, Helvetica, sans-serif;
   }
   a{
     text-decoration: none;
-    color: rgb(122, 58, 181);
+    color: white;
     font-weight: 700;
   }
   nav{
@@ -23,7 +23,7 @@
   }
   .nav-img p{
     margin-left: 50px;
-    color: rgb(122, 58, 181);
+    color: white;
     font-weight: 700;
   }
   .nav-flex{
@@ -63,12 +63,12 @@
   }
   .home-intro h1{
     font-size: 5rem;
-    color: white;
+    color: black;
     padding: 5px 0;
     margin-top: 50px;
   }
   .home-intro h2{
-    color: rgb(242, 7, 187);
+    color: white;
     font-size: 2.8rem;
   }
   .home-intro h4{
@@ -191,6 +191,9 @@
     padding: 20px;
     margin-left: 150px;
     
+  }
+  #btn{
+    color: black;
   }
   /* FOOTER STYLES */
   footer{
