@@ -14,10 +14,11 @@ import { GrFormClose } from 'react-icons/gr'
     return (
     <div>
          <nav>
-        <div className='nav-img'><p>Anulika Nnedu</p></div>
+        <div className='nav-hero'><p>Anulika Nnedu</p></div>
         
         <div className={`nav-flex ${menuOpen ? 'nav-flex active' : 'navflex'}`}>
         <NavLink to='/' onClick={handleClick}>Home</NavLink>
+        <NavLink to='/aboutme' onClick={handleClick}>About Me</NavLink>
         <NavLink to='/projects' onClick={handleClick}>Projects</NavLink>
         <NavLink to='/contact' onClick={handleClick}>Contact</NavLink>
         <Resume/>

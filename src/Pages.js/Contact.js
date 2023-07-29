@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
         <div  className='contact-flex'>
         <a href='https://twitter.com/anuli_nnedu' target='_blank'><img src={tweet} alt='twitter'/></a>
-        <a href='https://twitter.com/anuli_nnedu' target='_blank'>twitter</a>
+        <a href='https://twitter.com/anuli_nnedu' target='_blank'>Twitter</a>
          </div>
          <div  className='contact-flex'>
          <a href='https://www.linkedin.com/in/anulika-nnedu-3b2695a6' target='blank'> <img src={linkedin} alt='LinkedIn'/></a>
@@ -38,8 +38,6 @@ const Contact = () => {
          </div>
 
     </div>
-   
-
     </div>
   )
 }

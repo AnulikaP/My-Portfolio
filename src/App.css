@@ -6,91 +6,109 @@
   body{
     background-color:rgb(42, 41, 41);
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
   }
   a{
     text-decoration: none;
-    color: white;
-    font-weight: 700;
+    cursor: pointer;
   }
+  /* NAV STYLES */
   nav{
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1rem;
     padding: 20px;
-    position: relative;
-
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(39, 38, 38);
+    z-index: 1;
   }
-  .nav-img p{
-    margin-left: 50px;
+  nav, NavLink{
     color: white;
-    font-weight: 700;
   }
+  .nav-hero{
+    padding-left: 120px;
+    color: white;
+  }
+
+  
   .nav-flex{
     display: flex;
     justify-content:space-between ;
     gap: 2rem;
+    margin-right: 120px;
 
   }
   .hero-section{
-    background-image: url('./Assets/purple.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    width: 90%;
+    background-color: white;
+    width: 80%;
     margin: 0 auto;
     border-radius: 5px;
+    margin-top: 80px;
   }
   .hero-section:hover{
-    box-shadow: 2px 4px 12px 6px rgb(66, 66, 214) ;
+    box-shadow: 2px 4px 12px 6px white ;
   }
   .hero-speech{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
   }
   .hero-img{
-    width: 50%;
-  }
-  .hero-speech img{
     width: 100%;
-
+    padding: 20px;
   }
-  .home-intro{
-    padding: 20px 50px 20px 0;
-    width: 50%;
+
+  .hero-img img{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 200px;
+    border: 4px solid rgb(240, 106, 151);
   }
   .home-intro h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: black;
-    padding: 5px 0;
-    margin-top: 50px;
-  }
-  .home-intro h2{
-    color: white;
-    font-size: 2.8rem;
-  }
-  .home-intro h4{
-    font-size: 1.5rem;
-  }
-  .home-intro p{
-    text-align: justify;
-    font-size: 1.3rem;
     margin-top: 10px;
   }
+  .home-intro h2{
+    color:rgb(248, 94, 145);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .home-intro h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .home-intro p{
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  /* CONTACT SECTION STYLES */
   .contact-flex{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
   }
   .contact-sec{
     display: flex;
     justify-content: space-around;
-    padding: 50px;
-    margin-top: 50px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
     margin-bottom: 30px;
+    background-color: rgb(246, 134, 184);
   }
   .contact-sec img{
     width: 50px;
@@ -99,10 +117,10 @@
   }
   .contact{
     border-radius: 20px;
-    background-color:rgb(242, 7, 187);;
+    background-color:  rgb(246, 134, 184);
     margin: 0 auto;
-    width: 50%;
-    font-size: 1.5rem;
+    width: 60%;
+    font-size: 1.3rem;
     padding: 20px;
     color:white;
   }
@@ -111,89 +129,113 @@
   }
   .contact-div{
     padding-top: 50px;
+    border-top: 1px solid rgb(210, 205, 205);
+    
   }
   .mid-sec{
     margin: 0 auto;
     padding: 50px;
-    width:50% ;
-    font-size: 1.5rem;
+    width:60% ;
+    font-size: 1.3rem;
   }
   .contact-branch{
-    background-color: white;
-    width: 200px;
+    background-color:black;
+    color: white;
+    width: 120px;
     padding: 10px;
-    font-size: 1.5rem;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
     border-radius: 5px;
     
   }
-  .skill-sec h5{
-    font-size: 1.3rem;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  .skill-sec ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    gap: 5px;
-
-  }
-  .skill-sec li{
-    list-style-type: none;
-    border-radius: 15px;
-    color:  white;
-    font-weight: 600;
-    padding: 10px;
-    background-color: blueviolet;
-    transition: 0.3s ease-in-out;
-  }
-  .skill-sec li:hover{
-    background-color: rgb(242, 7, 187);
-    color: white;
-
-  }
-  .active{
-    /* border-radius: 15px;
-    color: white;
-    font-weight: 600;
-    padding: 5px;
-    background-color: blueviolet; */
-  }
-  #mobile{
-    display: none;
-  }
   
+ /* ABOUT SECTION STYLES */
+ .about-main{
+    background-color: rgb(241, 186, 195);
+   
+ }
+ .about-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; 
+      
+ }
+ .a-sec{
+  padding-top: 15px;
+ }
+ .slide-show{
+    max-width: 100%;
+    width: 50%;
+ }
+ .my-speech{
+    color:black;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    
+ }
+ .my-speech h1{
+  font-weight: 800;
+  padding-bottom: 20px;
+
+ }
+ .resume{
+    background-color: rgb(10, 10, 10);
+    font-weight: 500;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    display: inline-block; 
+ }
+ .skill-set{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(225, 128, 160);
+    padding: 20px;
+ }
+.skill-set img{
+    width: 50px;
+    height: 50px;
+ }
   /* PROJECT STYLES */
   .project img{
-    width: 250px;
+    width: 200px;
     border-radius: 10px;
+    padding: 10px;
      
   }
+  .project{
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+    background-color: white;
+    
+  }
   .project img:hover{
-    box-shadow: 2px 4px 12px 6px rgb(66, 66, 214) 
+    box-shadow: 2px 4px 12px 6px black;
   }
   .project p{
     font-weight: 400;
-    width: 250px;
-    color: white;
+    width: 400px;
+    color: black;
+   
   }
   .project a{
-    display: block;
-  }
-  .project-div ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
-    padding: 20px;
-    margin-left: 150px;
-    
-  }
-  #btn{
-    color: black;
+    font-weight: 700;
   }
   /* FOOTER STYLES */
   footer{
@@ -219,21 +261,23 @@
     justify-content: space-between;
     padding: 10px 0 0 0;
   }
+  .footer-flex a{
+    color: white;
+  }
+  #mobile{
+    display: none;
+  }
     
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 768px) {
     .hero-speech{
-        flex-direction: column;
-    }
-    .hero-speech img{
         width: 100%;
-        width: 150px;
+        padding: 20px;
     }
     .contact{
         font-size: 1rem;
     }
-    .home-intro h1{
-        margin-top: 5px;
-        font-size: 3rem;
+    .home-intro h2{
+        font-size: 1rem;
     }
     .home-intro h4{
         font-size: 1rem;
@@ -241,15 +285,12 @@
     .home-intro p{
         font-size: 16px;
     }
-    .skill-sec ul{
-        gap: 4px;
-    }
     .contact-sec{
         flex-direction: column;
-    
     }
     .mid-sec{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        width: 300px;
     }
     .project-div ul{
         display: flex;
@@ -257,8 +298,7 @@
         margin-left: 20px;
     }
     .project img{
-        width: 200px;
-        
+        width: 200px;    
     }
     footer{
         overflow-x: hidden !important;
@@ -273,21 +313,19 @@
         padding: 10px;
         position: fixed;
         top: 70px;
-        right: -200px;
-        width: 130px;
+        right: -320px;
+        width: 200px;
         height: 300px;
-        background-color: blueviolet;
+        z-index: 1;
+        background-color: white;
         box-shadow: 0 40px 60px black;
+        color: black;
         padding:0 20px  ;
         opacity: 0.9;
         transition: 0.3s ease-in-out;
     }
     .nav-flex.active{
-        right:0px ;
-    }
-    a{
-        color: black;
-        font-weight: 500;
+        right:-120px ;
     }
 
     #mobile{
@@ -297,4 +335,54 @@
         color: white;
     }
     
+  }
+  @media only screen and (max-width: 425px) {
+    .about-sec{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    .my-speech{
+      width: 350px;
+      font-size: 12px;
+      height: 100vh; 
+    }
+    .slide-show{
+      width: 70%;
+    
+    }
+    .my-speech h1{
+      padding-top:10px ;
+    }
+    .skill-set{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      
+    }
+    .hero-speech{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .hero-speech img{
+      
+      
+    }
+    .hero-intro{
+      height: 100px;
+      text-align: center;
+    }
+    .project p{
+      width: 300px;;
+    }
+    .project{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+
+
   }

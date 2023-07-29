@@ -8,6 +8,7 @@ import Contact from './Pages.js/Contact';
 import Hero from './Assets/anulika.png';
 import Navbar from './Pages.js/Navbar';
 import Footer from './Pages.js/Footer';
+import AboutMe from './Pages.js/AboutMe';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/aboutme' element={<AboutMe/>}/>
       <Route path='/projects' element={<Project/>}/>
       <Route path='/contact' element={<Contact/>}/>
 
